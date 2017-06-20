@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>network</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      Network informations
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          Connected: {{connected}}
+        </ion-item>
+        <ion-item>
+          Type: {{type}}
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

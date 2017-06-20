@@ -1,0 +1,25 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>flashlight</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      Toogle Flashlight
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>Switched on: {{isSwitchedOn}}</ion-item>
+        <ion-item>
+          <button ion-button full (tap)="toggleFlashlight()">Toogle Flash</button>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

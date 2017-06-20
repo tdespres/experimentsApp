@@ -1,5 +1,11 @@
 {
   "name": "experimentsApp",
   "app_id": "",
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/V2",
+      "proxyUrl": "http://services.odata.org/V2"
+    }
+  ]
 }

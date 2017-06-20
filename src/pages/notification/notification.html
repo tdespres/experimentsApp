@@ -1,0 +1,29 @@
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>notification</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      Schedule notification
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-input placeholder="Notification text" [(ngModel)]="notificationText"></ion-input>
+        </ion-item>
+        <ion-item>
+          <button ion-button full (tap)="scheduleNotification()">Schedule notification</button>
+        </ion-item>
+        <ion-item>
+          <button ion-button full (tap)="clearAll()">Clear All</button>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

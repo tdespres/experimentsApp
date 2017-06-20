@@ -1,0 +1,40 @@
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>vibration</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      Vibration
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label color="primary">Time</ion-label>
+          <ion-input placeholder="Vibration time" [(ngModel)]="vibrationOptions.time" type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label color="primary">Pause</ion-label>
+          <ion-input placeholder="Vibration pause" [(ngModel)]="vibrationOptions.pause" type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label color="primary">Repeat</ion-label>
+          <ion-input placeholder="Vibration repeat" [(ngModel)]="vibrationOptions.repeat" type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+          <button ion-button full (tap)="vibrate()">Vibrate</button>
+          <p>Or shake to vibrate ! (only iOS)</p>
+        </ion-item>
+        <ion-item>
+          <button ion-button full (tap)="stop()">Stop</button>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
